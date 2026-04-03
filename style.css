@@ -274,7 +274,7 @@ footer {
 /* ========================= */
 /* TABLET / TELA VERTICAL */
 /* ========================= */
-@media (max-width: 1200px) {
+@media (orientation: portrait) {
 
     main {
         flex-direction: column;
@@ -286,7 +286,6 @@ footer {
         padding-left: 20px;
     }
 
-    /* LEFT */
     .left {
         text-align: center;
         max-width: 100%;
@@ -307,7 +306,6 @@ footer {
         flex-wrap: wrap;
     }
 
-    /* RIGHT */
     .right {
         align-items: center;
         width: 100%;
@@ -325,7 +323,6 @@ footer {
         height: auto;
     }
 
-    /* SOCIAL */
     .social {
         top: 15px;
         right: 15px;
@@ -336,7 +333,6 @@ footer {
         z-index: 9999;
     }
 
-    /* FOOTER */
     footer {
         position: fixed;
         bottom: 10px;
@@ -364,16 +360,11 @@ footer {
 /* ========================= */
 /* MOBILE (CELULAR) */
 /* ========================= */
-@media (max-width: 600px) {
+@media (orientation: portrait), (max-width: 768px) {
 
     main {
         padding: 30px 15px;
         gap: 40px;
-    }
-
-    /* LEFT */
-    .left {
-        margin-bottom: 40px;
     }
 
     .left h1 {
@@ -383,10 +374,8 @@ footer {
     .left p {
         margin: 0 10px 30px 10px;
         font-size: 15px;
-        line-height: 1.5;
     }
 
-    /* BOTÕES */
     .buttons {
         flex-direction: column;
         gap: 15px;
@@ -394,13 +383,10 @@ footer {
 
     button {
         width: 100%;
-        font-size: 15px;
         padding: 14px;
     }
 
-    /* CARDS */
     .card {
-        width: 100%;
         max-width: 100%;
         padding: 20px 0;
     }
@@ -414,25 +400,10 @@ footer {
         bottom: 15px;
     }
 
-    .card span {
-        font-size: 13px;
-    }
-
-    .card .tag {
-        font-size: 12px;
-        padding: 5px 12px;
-    }
-
-    /* SOCIAL */
-    .social {
-        gap: 15px;
-    }
-
     .social img {
         width: 20px;
     }
 
-    /* FOOTER */
     footer {
         flex-direction: column;
         align-items: center;
