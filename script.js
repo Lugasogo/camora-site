@@ -21,11 +21,9 @@ document.querySelector('.copy-email').addEventListener('click', () => {
 });
 
 document.getElementById('btnSistema').onclick = () => {
-    window.location.href =
-        'https://drive.google.com/uc?export=download&id=11PN7nsxD3n29l7jlh-adRFpy699KRSdM';
+    window.location.href = 'CamoraSetup.rar';
 };
 
 document.getElementById('btnApp').onclick = () => {
-    window.location.href =
-        'https://drive.google.com/uc?export=download&id=1nFWyBmL-4dh8JANbrpp2oEwyuB-Ny2T4';
+    window.location.href = 'Camora.apk';
 };
