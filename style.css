@@ -297,7 +297,7 @@ footer {
     }
     
     header {
-        padding: 35px 0 0 20px;
+        padding: 35px 0 0 30px;
         position: relative;
     }
 
@@ -362,7 +362,7 @@ footer {
     .right .top {
         position: absolute;
         top: 35px;
-        right: 20px;
+        right: 30px;
         text-align: center;
         font-size: 2rem;
         opacity: 0.8;
