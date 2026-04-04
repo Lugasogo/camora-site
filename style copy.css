@@ -19,10 +19,6 @@
     font-style: normal;
 }
 
-html {
-    font-size: 100%;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +33,7 @@ body {
     overflow: hidden;
 
     -webkit-font-smoothing: antialiased;
+
 }
 
 /* HEADER */
@@ -47,7 +44,7 @@ header {
 header h2 {
     font-family: 'Agbalumo', sans-serif;
     font-weight: 400;
-    font-size: 1.94rem;
+    font-size: 31px;
     opacity: 0.7;
 }
 
@@ -77,11 +74,10 @@ header h2 {
 main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* centraliza vertical */
     padding: 60px;
-    min-height: calc(100vh - 120px);
-    padding-left: clamp(40px, 8vw, 150px);
-    padding-top: 30px;
+    height: calc(100vh - 120px);
+    padding-left: 150px;
 }
 
 /* LEFT */
@@ -93,7 +89,7 @@ main {
 .left h1 {
     font-family: 'Agbalumo', sans-serif;
     font-weight: 400;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: 64px;
     margin-bottom: 5px;
     white-space: nowrap;
 }
@@ -104,7 +100,6 @@ main {
     opacity: 0.7;
     line-height: 1.6;
     margin-bottom: 90px;
-    font-size: clamp(0.9rem, 1.2vw, 1rem);
 }
 
 .buttons {
@@ -115,7 +110,7 @@ main {
 button {
     font-family: 'K2D', sans-serif;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 16px;
     padding: 10px 25px;
     border-radius: 100px;
     border: none;
@@ -151,9 +146,6 @@ button {
     flex-direction: column;
     gap: 25px;
     justify-content: center;
-
-    min-width: 400px;
-    align-items: flex-end;
 }
 
 .right .top {
@@ -165,8 +157,7 @@ button {
 
 /* CARD */
 .card {
-    width: 100%;
-    max-width: 380px;
+    width: 400px;
     padding: 15px 0px 10px 0px;
     border-radius: 12px;
     background: rgba(255,255,255,0.05);
@@ -175,6 +166,7 @@ button {
     text-align: center;
     transition: 0.3s;
 }
+
 
 /* HEADER CARD */
 .header-card {
@@ -186,12 +178,12 @@ button {
 .card h3 {
     font-family: 'K2D-Thin', sans-serif;
     font-weight: 300;
-    font-size: 1.06rem;
+    font-size: 17px;
     margin-left: 20px;
 }
 
 .card .tag {
-    font-size: 0.81rem;
+    font-size: 13px;
     padding: 4px 10px;
     border-radius: 20px;
     background: #00ff591a;
@@ -208,17 +200,17 @@ button {
 
 /* PRICE */
 .card h2 {
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-size: 40px;
     margin: 10px 30px 0px 0px;
 }
 
 .card h2 small {
     font-family: 'K2D-Thin', sans-serif;
     font-weight: 300;
-    font-size: 0.88rem;
+    font-size: 14px;
     opacity: 0.8;
     position: relative;
-    bottom: 20px;
+    bottom: 20px; /* ajusta aqui */
 }
 
 .card span {
@@ -226,7 +218,7 @@ button {
     font-weight: 300;
     display: block;
     margin-top: 20px;
-    font-size: 0.88rem;
+    font-size: 14px;
     color: #ffffffce;
 }
 
@@ -246,7 +238,7 @@ footer {
     font-weight: 300;
     display: flex;
     align-items: center;
-    font-size: 0.94rem;
+    font-size: 15px;
     gap: 10px;
     opacity: 0.9;
 }
@@ -267,47 +259,4 @@ footer {
 
 .author img {
     width: 15px;
-}
-
-
-
-
-
-@media (orientation: portrait) {
-
-    main {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header h2 {
-        font-size: 4rem;
-    }
-
-
-    .left h1 {
-        font-size: clamp(2.5rem, 13vw, 5rem);
-    }
-
-    .left p {
-        font-size: clamp(0.9rem, 3vw, 2rem);
-        width: 800px;
-    }
-
-    .buttons {
-        display: flex;
-        gap: 20px;
-    }
-
-    button {
-        font-family: 'K2D', sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
-        padding: 10px 25px;
-        border-radius: 100px;
-        border: none;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
 }
