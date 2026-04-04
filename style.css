@@ -283,7 +283,7 @@ footer {
 @media (orientation: portrait) {
 
     body {
-        min-height: 100vh;
+        min-height: auto;
         height: auto;
         overflow-x: hidden;
         overflow-y: auto;
@@ -360,7 +360,7 @@ footer {
     .card {
         width: 100%;
         max-width: 100%;
-        padding: 16px 0 14px 0;
+        padding: 18px 0 25px 0;
         border-radius: 14px;
     }
 
@@ -405,6 +405,7 @@ footer {
         align-items: center;
         gap: 0;
         padding: 26px 22px 24px 22px;
+        position: static;
     }
 
     .alert {
