@@ -305,7 +305,7 @@ footer {
         justify-content: flex-start;
         align-items: stretch;
         min-height: auto;
-        padding: 60px 80px 200px 80px;
+        padding: 60px 80px 40px 80px;
         gap: 34px;
     }
 
@@ -415,7 +415,7 @@ footer {
         gap: 10px;
         font-size: 1.3rem;
         line-height: 1.45;
-        margin-bottom: 34px;
+        margin-bottom: 200px;
     }
  
     .alert img {
@@ -433,7 +433,7 @@ footer {
         align-items: center;
         width: 100%;
         padding: 0 200px;
-        margin-bottom: 24px;
+        margin-bottom: 60px;
         gap: 0;
     }
 
