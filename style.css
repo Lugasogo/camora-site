@@ -259,7 +259,7 @@ footer {
 }
 
 .alert img {
-    width: 18px;
+    width: 30px;
 }
 
 /* AUTHOR */
@@ -391,7 +391,7 @@ footer {
 
     .card h2 small {
         font-size: 1.5rem;
-        bottom: 14px;
+        bottom: 40px;
     }
 
     .card span {
@@ -411,7 +411,7 @@ footer {
 
     .alert {
         width: 100%;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
         font-size: 1.3rem;
         line-height: 1.45;
@@ -419,7 +419,7 @@ footer {
     }
  
     .alert img {
-        width: 30px;
+        width: 40px;
         margin-top: 2px;
         flex-shrink: 0;
     }
