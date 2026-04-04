@@ -282,13 +282,20 @@ footer {
 
 @media (orientation: portrait) {
 
-    body {
-        min-height: auto;
+    html, body {
+        min-height: 100%;
         height: auto;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(300deg, #27313A, #697173);
+        background-repeat: no-repeat;
+        background-size: cover;
         overflow-x: hidden;
         overflow-y: auto;
     }
-
+    
     header {
         padding: 35px 0 0 20px;
         position: relative;
