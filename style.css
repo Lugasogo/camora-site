@@ -383,13 +383,13 @@ footer {
 
     .card h3 {
         font-size: 2rem;
-        margin-left: 0;
+        margin-left: 20px;
     }
 
     .card .tag {
         font-size: 1.4rem;
         padding: 4px 10px;
-        margin-right: 0;
+        margin-right: 20px;
     }
 
     .card hr {
@@ -398,12 +398,13 @@ footer {
 
     .card h2 {
         font-size: 5rem;
-        margin: 6px 0 0 0;
+        margin: 6px 60px 0 0;
     }
 
     .card h2 small {
         font-size: 1.5rem;
         bottom: 40px;
+        margin-right: 10px;
     }
 
     .card span {
