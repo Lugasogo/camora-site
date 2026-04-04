@@ -287,50 +287,35 @@ footer {
         height: auto;
         overflow-x: hidden;
         overflow-y: auto;
-
-        display: flex;
-        flex-direction: column;
     }
 
-    /* ordem visual */
     header {
-        order: 1;
         padding: 22px 0 0 20px;
     }
 
-    main {
-        order: 2;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-        min-height: auto;
-        padding: 28px 22px 0 22px;
-        gap: 34px;
-    }
-
-    footer {
-        order: 3;
-    }
-
-    .social {
-        order: 4;
-    }
-
-    /* HEADER */
     header h2 {
         font-size: 2.4rem;
         line-height: 1;
         opacity: 0.75;
     }
 
-    /* LEFT */
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        min-height: auto;
+        padding: 60px 100px 0 100px;
+        gap: 34px;
+    }
+
     .left {
         max-width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 50px;
     }
 
     .left h1 {
-        font-size: 3.25rem;
+        font-size: 5.25rem;
         line-height: 0.98;
         white-space: normal;
         margin-bottom: 18px;
@@ -338,26 +323,24 @@ footer {
 
     .left p {
         max-width: 100%;
-        font-size: 0.9rem;
+        font-size: 1.8rem;
         line-height: 1.55;
         opacity: 0.78;
         margin-bottom: 28px;
     }
 
-    /* BOTÕES */
     .buttons {
         flex-direction: column;
-        gap: 12px; /* antes estava muito espaçado */
+        gap: 12px;
     }
 
     button {
         width: 100%;
-        font-size: 1rem;
+        font-size: 2.5rem;
         padding: 14px 20px;
         border-radius: 999px;
     }
 
-    /* PLANOS */
     .right {
         min-width: 0;
         width: 100%;
@@ -368,7 +351,7 @@ footer {
     .right .top {
         position: static;
         text-align: center;
-        font-size: 0.95rem;
+        font-size: 2rem;
         opacity: 0.8;
         margin-bottom: 2px;
     }
@@ -414,18 +397,15 @@ footer {
         font-size: 0.78rem;
     }
 
-    /* FOOTER */
     footer {
-        position: static;
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
-        justify-content: flex-start;
         gap: 0;
-        padding: 26px 22px 0 22px;
+        padding: 26px 22px 24px 22px;
     }
 
-    /* ALERTA ACIMA DOS SOCIAIS */
     .alert {
         width: 100%;
         align-items: flex-start;
@@ -441,20 +421,16 @@ footer {
         flex-shrink: 0;
     }
 
-    /* SOCIAIS NO RODAPÉ */
     .social {
         position: static;
         transform: none;
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
         width: 100%;
         padding: 0 28px;
-        margin-top: auto; /* empurra para o final */
-        margin-bottom: 28px;
+        margin-bottom: 24px;
         gap: 0;
     }
 
@@ -463,16 +439,16 @@ footer {
         opacity: 0.65;
     }
 
-    /* AUTOR SEMPRE EMBAIXO */
     .author {
+        display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 0.88rem;
+        gap: 10px;
+        font-size: 1.8rem;
         opacity: 0.85;
-        padding-bottom: 24px;
     }
 
     .author img {
-        width: 16px;
+        width: 30px;
     }
 }
