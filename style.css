@@ -62,11 +62,18 @@ header h2 {
     gap: 40px;
 }
 
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .social img {
     width: 18px;
     opacity: 0.6;
     cursor: pointer;
     transition: 0.3s;
+    display: block;
 }
 
 .social img:hover {
@@ -275,6 +282,197 @@ footer {
 
 @media (orientation: portrait) {
 
-        
+    body {
+        min-height: 100vh;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
 
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ordem visual */
+    header {
+        order: 1;
+        padding: 22px 0 0 20px;
+    }
+
+    main {
+        order: 2;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        min-height: auto;
+        padding: 28px 22px 0 22px;
+        gap: 34px;
+    }
+
+    footer {
+        order: 3;
+    }
+
+    .social {
+        order: 4;
+    }
+
+    /* HEADER */
+    header h2 {
+        font-size: 2.4rem;
+        line-height: 1;
+        opacity: 0.75;
+    }
+
+    /* LEFT */
+    .left {
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .left h1 {
+        font-size: 3.25rem;
+        line-height: 0.98;
+        white-space: normal;
+        margin-bottom: 18px;
+    }
+
+    .left p {
+        max-width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        opacity: 0.78;
+        margin-bottom: 28px;
+    }
+
+    /* BOTÕES */
+    .buttons {
+        flex-direction: column;
+        gap: 12px; /* antes estava muito espaçado */
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 14px 20px;
+        border-radius: 999px;
+    }
+
+    /* PLANOS */
+    .right {
+        min-width: 0;
+        width: 100%;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .right .top {
+        position: static;
+        text-align: center;
+        font-size: 0.95rem;
+        opacity: 0.8;
+        margin-bottom: 2px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px 0 14px 0;
+        border-radius: 14px;
+    }
+
+    .header-card {
+        padding: 0 14px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .card .tag {
+        font-size: 0.66rem;
+        padding: 4px 10px;
+        margin-right: 0;
+    }
+
+    .card hr {
+        margin: 14px 0;
+    }
+
+    .card h2 {
+        font-size: 3rem;
+        margin: 6px 0 0 0;
+    }
+
+    .card h2 small {
+        font-size: 0.8rem;
+        bottom: 14px;
+    }
+
+    .card span {
+        margin-top: 12px;
+        font-size: 0.78rem;
+    }
+
+    /* FOOTER */
+    footer {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+        padding: 26px 22px 0 22px;
+    }
+
+    /* ALERTA ACIMA DOS SOCIAIS */
+    .alert {
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.82rem;
+        line-height: 1.45;
+        margin-bottom: 34px;
+    }
+
+    .alert img {
+        width: 16px;
+        margin-top: 2px;
+        flex-shrink: 0;
+    }
+
+    /* SOCIAIS NO RODAPÉ */
+    .social {
+        position: static;
+        transform: none;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        padding: 0 28px;
+        margin-top: auto; /* empurra para o final */
+        margin-bottom: 28px;
+        gap: 0;
+    }
+
+    .social img {
+        width: 24px;
+        opacity: 0.65;
+    }
+
+    /* AUTOR SEMPRE EMBAIXO */
+    .author {
+        justify-content: center;
+        align-items: center;
+        font-size: 0.88rem;
+        opacity: 0.85;
+        padding-bottom: 24px;
+    }
+
+    .author img {
+        width: 16px;
+    }
 }
