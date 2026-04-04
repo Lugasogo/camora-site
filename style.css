@@ -315,7 +315,7 @@ footer {
     }
 
     .left h1 {
-        font-size: 5.25rem;
+        font-size: 5rem;
         line-height: 0.98;
         white-space: normal;
         margin-bottom: 18px;
@@ -335,8 +335,8 @@ footer {
     }
 
     button {
-        width: 80%;
-        font-size: 2.5rem;
+        width: 60%;
+        font-size: 2rem;
         padding: 14px 20px;
         border-radius: 999px;
         margin: 0 auto;
@@ -375,7 +375,7 @@ footer {
     }
 
     .card .tag {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 4px 10px;
         margin-right: 0;
     }
@@ -396,7 +396,7 @@ footer {
 
     .card span {
         margin-top: 12px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     footer {
