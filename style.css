@@ -226,6 +226,8 @@ button {
     opacity: 0.8;
     position: relative;
     bottom: 20px;
+    
+        margin-right: 10px;
 }
 
 .card span {
@@ -404,7 +406,6 @@ footer {
     .card h2 small {
         font-size: 1.5rem;
         bottom: 40px;
-        margin-right: 10px;
     }
 
     .card span {
