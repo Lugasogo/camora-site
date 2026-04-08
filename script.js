@@ -20,10 +20,10 @@ document.querySelector('.copy-email').addEventListener('click', () => {
     }, 2000);
 });
 
-/*document.getElementById('btnSistema').onclick = () => {
+document.getElementById('btnSistema').onclick = () => {
     window.location.href = 'CamoraSetup.rar';
 };
 
 document.getElementById('btnApp').onclick = () => {
     window.location.href = 'Camora.apk';
-};*/
+};
