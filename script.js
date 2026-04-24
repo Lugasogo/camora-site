@@ -21,7 +21,7 @@ document.querySelector('.copy-email').addEventListener('click', () => {
 });
 
 document.getElementById('btnSistema').onclick = () => {
-    window.location.href = 'CamoraSetup.rar';
+    window.location.href = 'Camora Instalador.rar';
 };
 
 document.getElementById('btnApp').onclick = () => {
